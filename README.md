@@ -11,9 +11,9 @@ A desktop application with facial recognition embedded. It's built with [PyQt5](
 
 ## Demo ##
 
-<img src="https://gclstorage.blob.core.windows.net/images/Lunar.Face-screenshot01.png" />
+<img src="https://gclstorage.blob.core.windows.net/images/Lunar.Face-screenshot1.png" />
 
-<img src="https://gclstorage.blob.core.windows.net/images/Lunar.Face-screenshot02.png" />
+<img src="https://gclstorage.blob.core.windows.net/images/Lunar.Face-screenshot2.png" />
 
 ## Important Packages ##
 - [PyQt5](https://pypi.org/project/PyQt5/);
