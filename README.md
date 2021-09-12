@@ -9,6 +9,23 @@
 
 A desktop application with facial recognition embedded. It's built with [PyQt5](https://build-system.fman.io/pyqt5-tutorial) and using [Azure Cognitive Service Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/).
 
+## Local Development and Use ##
+1. Checkout the codes to a working directory;
+2. Create a virtual environment in the working directory, execute the following command: \
+   `python3 -m venv venv`
+3. Activate the virtual environment on Windows, run: \
+   `call venv/scripts/activate.bat` \
+   On Mac and Linux, use: \
+   `source venv/bin/activate`
+4. Create Cognitive Service on the Azure Portal and set its API key and endpoint in the environment variables;
+   ```
+    SET AZURE_COGNITIVE_SERVICE_KEY=...
+    SET AZURE_COGNITIVE_SERVICE_ENDPOINT=...
+   ```
+   Note: The reason of setting the key and endpoint in the environment variables is to auto fill them into the app. You can choose not to set them in the environment but instead, manually key them to the app for every launch of the app;
+5. Browse an image with real human face;
+6. Enjoy the result.
+
 ## Demo ##
 
 <img src="https://gclstorage.blob.core.windows.net/images/Lunar.Face-screenshot1.png" />
