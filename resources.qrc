@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file alias="file.svg">resources/font-awesome/file.svg</file>
+        <file alias="heartbeat.svg">resources/font-awesome/heartbeat.svg</file>
+        <file alias="history.svg">resources/font-awesome/history.svg</file>
+        <file alias="home.svg">resources/font-awesome/home.svg</file>
+        <file alias="hourglass.svg">resources/font-awesome/hourglass.svg</file>
+        <file alias="question-circle.svg">resources/font-awesome/question-circle.svg</file>
+        <file alias="windows.svg">resources/font-awesome/windows.svg</file>
+        <file alias="youtube.svg">resources/font-awesome/youtube.svg</file>
+    </qresource>
+</RCC>
