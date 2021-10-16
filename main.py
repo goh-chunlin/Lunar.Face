@@ -1,4 +1,5 @@
 import sys
+import os
 import qrc_resources
 import widgets.cognitive_service_file_upload as UICognitiveServiceFileUploadForm
 import widgets.content_tab as UIContentTab
@@ -13,7 +14,7 @@ class Window(QMainWindow):
     def __init__(self, parent=None):
         """Initializer."""
         super().__init__(parent)
-        self.setWindowIcon(QIcon('resources/images/logo.png'))
+        self.setWindowIcon(QIcon(resource_path('resources/images/logo.png')))
         self.setWindowTitle("Face")
         self.resize(1200, 800)
 
@@ -72,6 +73,15 @@ class Window(QMainWindow):
         mainToolBar.addAction(QAction(QIcon(":windows.svg"), "&Microsoft Store", self))
         mainToolBar.addAction(QAction(QIcon(":question-circle.svg"), "&About Us", self))
         self.addToolBar(Qt.LeftToolBarArea, mainToolBar)
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
