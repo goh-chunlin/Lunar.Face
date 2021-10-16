@@ -11,7 +11,7 @@
 A desktop application with facial recognition embedded. It's built with [PyQt5](https://build-system.fman.io/pyqt5-tutorial) and using [Azure Cognitive Service Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/).
 
 ## Python Version ##
-Some of the libraries used in this project, such as azure-cognitiveservices-vision-face and pyinstaller, are only working up to Python 3.8. Hence, it is recommended to develop this project **using only Python 3.8**.
+Some of the libraries used in this project, such as [azure-cognitiveservices-vision-face](https://pypi.org/project/azure-cognitiveservices-vision-face/), are only working up to Python 3.8. Hence, it is recommended to develop this project **using only Python 3.8**.
 
 ## Local Development and Use ##
 1. Checkout the codes to a working directory;
